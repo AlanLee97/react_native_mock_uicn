@@ -16,10 +16,13 @@ class AvatarAndNickname extends React.Component{
   // 渲染函数
   render() {
     const userInfo = this.props.userInfo;
+    const props = this.props;
     return (
         <View style={{flexDirection: 'row',
-          padding: 20}}>
-          <ALImage url={userInfo.avatar} round={true} width={60} height={60} />
+          padding: React.createDefaultValue(props.padding, 0),
+          margin: React.createDefaultValue(props.margin, 0),
+        }}>
+          <ALImage url={userInfo.avatar} round={true} width={50} height={50} />
           <View style={{width: 10}}></View>
           <View>
             <Text style={styles.alTextH2}>{userInfo.username}</Text>

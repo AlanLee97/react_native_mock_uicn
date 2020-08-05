@@ -124,7 +124,7 @@ class MyPage extends React.Component{
           <ScrollView style={{backgroundColor: '#fff',
             paddingTop: 30}}>
             {/*用户名和昵称*/}
-            <AvatarAndNickname userInfo={userInfo} />
+            <AvatarAndNickname userInfo={userInfo} padding={20} />
 
             {/*统计数据*/}
             <View style={[localStyle.countBoxStyle]}>
@@ -172,10 +172,9 @@ class MyPage extends React.Component{
             <View style={[styles.alFlexRow, styles.alFlexWrap, styles.alPadding20, styles.alFlexSpaceBetween]}>
               {
                 workData.map((item, index) => {
-                  return <View style={[styles.alMarginBottom25]}>
+                  return <View key={item.title} style={[styles.alMarginBottom25]}>
                     <ShowWorkBox
                         width={screenWidth / 2.4}
-                        key={item.title}
                         url={item.url}
                         title={item.title}
                         like={item.like}

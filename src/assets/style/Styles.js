@@ -149,6 +149,83 @@ const styles = StyleSheet.create({
     padding: 30
   },
 
+  alPaddingLeft10: {
+    paddingLeft: 10
+  },
+  alPaddingLeft20: {
+    paddingLeft: 20
+  },
+  alPaddingLeft30: {
+    paddingLeft: 30
+  },
+
+  alPaddingTop10: {
+    paddingTop: 10
+  },
+  alPaddingTop20: {
+    paddingTop: 20
+  },
+  alPaddingTop30: {
+    paddingTop: 30
+  },
+
+  alPaddingRight10: {
+    paddingRight: 10
+  },
+  alPaddingRight20: {
+    paddingRight: 20
+  },
+  alPaddingRight30: {
+    paddingRight: 30
+  },
+
+  alPaddingBottom10: {
+    paddingBottom: 10
+  },
+  alPaddingBottom20: {
+    paddingBottom: 20
+  },
+  alPaddingBottom25: {
+    paddingBottom: 25
+  },
+  alPaddingBottom30: {
+    paddingBottom: 30
+  },
+
+  alPaddingTB10:{
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+  alPaddingTB20:{
+    paddingTop: 20,
+    paddingBottom: 20
+  },
+  alPaddingTB30:{
+    paddingTop: 30,
+    paddingBottom: 30
+  },
+  alPaddingTB40:{
+    paddingTop: 40,
+    paddingBottom: 40
+  },
+
+  alPaddingLR10:{
+    paddingLeft: 10,
+    paddingRight: 10
+  },
+  alPaddingLR20:{
+    paddingLeft: 20,
+    paddingRight: 20
+  },
+  alPaddingLR30:{
+    paddingLeft: 30,
+    paddingRight: 30
+  },
+  alPaddingLR40:{
+    paddingLeft: 40,
+    paddingRight: 40
+  },
+
   alShowBorderRed:{
     borderWidth: 1,
     borderColor: 'red',
@@ -208,6 +285,18 @@ const styles = StyleSheet.create({
   },
   alFontSize30: {
     fontSize: 30
+  },
+
+  alColorGray: {
+    color: "#cecece"
+  },
+
+  alColorBlue: {
+    color: "#68d4fb"
+  },
+
+  alWrapWidth: {
+    alignSelf: 'flex-start'
   }
 
 })

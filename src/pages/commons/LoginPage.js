@@ -57,7 +57,7 @@ class LoginPage extends React.Component {
           {/*密码输入框*/}
           <View style={[styles.alMarginLR30, styles.alMarginTop30]}>
             <Text style={[localStyle.colorGray]}>用户密码</Text>
-            <TextInput height={40}/>
+            <TextInput caretHidden={true} height={40}/>
             <ALDivider width={screenWidth - 60}/>
           </View>
 

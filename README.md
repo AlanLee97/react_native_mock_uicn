@@ -58,3 +58,13 @@
 - 正在开发“首页”页面
 - 正在开发“登录”页面
 
+
+
+## 截图
+
+| 标题 | 截图                                                         |
+| ---- | ------------------------------------------------------------ |
+| 登录 | ![bd2196c37c3f960bfb63b8faed1a00c](https://gitee.com/AlanLee97/assert/raw/master/note_images/bd2196c37c3f960bfb63b8faed1a00c.jpg) |
+| 首页 | ![c87aa3faa79bc4723a615453aa716b8](https://gitee.com/AlanLee97/assert/raw/master/note_images/c87aa3faa79bc4723a615453aa716b8.jpg) |
+| 我的 | ![205e71fef237d84929e6a701b22603f](https://gitee.com/AlanLee97/assert/raw/master/note_images/205e71fef237d84929e6a701b22603f.jpg) |
+

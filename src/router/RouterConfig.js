@@ -2,6 +2,7 @@ import HomePage from "../pages/home/HomePage";
 import LoginPage from "../pages/commons/LoginPage";
 import AppContainer from "../pages/commons/AppContainer";
 import TestNetwork from "../pages/test/TestNetwork";
+import RegisterPage from '../pages/commons/RegisterPage';
 
 const routes = [
   {
@@ -20,10 +21,6 @@ const routes = [
     component: HomePage,
     options: {
       header: () => null,
-      headerStyle: {
-        backgroundColor: 'transparent'
-      },
-      headerTransparent: true,
     }
   },
   {
@@ -31,9 +28,13 @@ const routes = [
     component: LoginPage,
     options: {
       header: () => null,
-      headerStyle: {
-        backgroundColor: 'transparent'
-      },
+    }
+  },
+  {
+    name: "RegisterPage",
+    component: RegisterPage,
+    options: {
+      header: () => null,
     }
   },
   {
@@ -41,9 +42,6 @@ const routes = [
     component: TestNetwork,
     options: {
       header: () => null,
-      headerStyle: {
-        backgroundColor: 'transparent'
-      },
     }
   }
 ];

@@ -1,5 +1,4 @@
 .test{
     display: flex;
-    flex-wrap: nowrap;
-    text-overflow: ellipsis;
+    justify-items: center;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import {Image} from 'react-native'
-import {round} from "react-native-reanimated";
 
 class ALImage extends React.Component {
 
@@ -19,8 +18,8 @@ class ALImage extends React.Component {
 
     return (
         <Image source={props.src !== undefined ? props.src : {uri: props.url}} style={{
-          width: props.width,
-          height: props.height,
+          width: React.createDefaultValue(props.width, React.getScreenWidth()),
+          height: React.createDefaultValue(props.height, React.getScreenWidth()),
           borderRadius: props.round ? props.width : props.radius,
         }}/>
     );

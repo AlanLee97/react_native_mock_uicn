@@ -1,6 +1,15 @@
 import React from "react";
-import {View, Text} from 'react-native'
+import {View, Text} from 'react-native';
+import {Button, Badge} from 'react-native-elements';
+import {SegmentedView, Label} from 'teaset'
 import styles from '../../assets/style/Styles';
+import HomePage from '../home/HomePage';
+import MyPage from '../my/MyPage';
+import LoginPage from '../commons/LoginPage';
+import RegisterPage from '../commons/RegisterPage';
+import ALTitleTab from '../../components/al-title-tab/ALTitleTab';
+
+
 
 class DiscoveryPage extends React.Component{
 
@@ -14,9 +23,13 @@ class DiscoveryPage extends React.Component{
 
   // 渲染函数
   render() {
+    const nav = this.props.navigation;
     return (
-        <View style={styles.alFlexCenter}>
-          <Text>DiscoveryPage</Text>
+        <View>
+          <View style={{height: 400}}></View>
+          <Button title={"登录"} onPress={() => nav.push('LoginPage')} />
+
+
         </View>
     );
   }

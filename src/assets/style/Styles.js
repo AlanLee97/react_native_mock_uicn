@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  alTextCenter: {
+    textAlign: 'center'
+  },
+  alFlex:{
+    display: 'flex'
+  },
   alFlexRow:{
     flexDirection: 'row'
   },

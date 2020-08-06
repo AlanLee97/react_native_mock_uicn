@@ -101,7 +101,7 @@ class HomePage extends React.Component{
           <ScrollView>
             {
               state.workList.map((item, index) => {
-                return <ShowWorkBox data={item} />
+                return <ShowWorkBox key={item.title} data={item} />
               })
             }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {View, Text, Button} from 'react-native';
 import {HOME_PAGE} from "../../router/RouterConst";
+import styles from '../../assets/style/Styles';
 
 class RegisterPage extends React.Component{
 
@@ -16,12 +17,8 @@ class RegisterPage extends React.Component{
   render() {
     const state = this.state;
     return (
-        <View>
-          <Text>LoginPage</Text>
-          <Button title="注册成功，返回首页" onPress={() => {
-            state.navigation.navigate('HomePage')
-          }} ></Button>
-
+        <View style={styles.alFlexCenter}>
+          <Text style={styles.alTextH1}>注册页面</Text>
         </View>
     );
   }

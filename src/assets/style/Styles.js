@@ -87,6 +87,16 @@ const styles = StyleSheet.create({
     marginTop: 30
   },
 
+  alMarginTop_10: {
+    marginTop: -10
+  },
+  alMarginTop_20: {
+    marginTop: -20
+  },
+  alMarginTop_30: {
+    marginTop: -30
+  },
+
   alMarginRight10: {
     marginRight: 10
   },

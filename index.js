@@ -19,13 +19,11 @@ React.getScreenInfo = () => {
 }
 
 React.getScreenWidth = () => {
-  let screenWidth = Dimensions.get('window').width;
-  return screenWidth;
+  return Dimensions.get('window').width;
 }
 
 React.getScreenHeight = () => {
-  let screenHeight = Dimensions.get('window').height;
-  return screenHeight;
+  return Dimensions.get('window').height;
 }
 
 AppRegistry.registerComponent(appName, () => App);

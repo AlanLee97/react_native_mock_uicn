@@ -8,6 +8,8 @@ target 'react_native_mock_uicn' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-viewpager', :path => '../node_modules/@react-native-community/viewpager'
+
   target 'react_native_mock_uicnTests' do
     inherit! :complete
     # Pods for testing

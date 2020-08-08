@@ -64,7 +64,7 @@
 
 | 标题                             | 截图                                                         |
 | -------------------------------- | ------------------------------------------------------------ |
-| <p style="width: 100px">登录</p> | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/bd2196c37c3f960bfb63b8faed1a00c.jpg" alt="bd2196c37c3f960bfb63b8faed1a00c" style="width:33%; " /></div> |
-| 首页                             | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/c87aa3faa79bc4723a615453aa716b8.jpg" alt="c87aa3faa79bc4723a615453aa716b8" style="width:33%; margin: 0 auto;" /></div> |
-| 我的                             | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/205e71fef237d84929e6a701b22603f.jpg" alt="205e71fef237d84929e6a701b22603f" style="width: 33%;" /></div> |
+| <p style="width: 100px">登录</p> | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/bd2196c37c3f960bfb63b8faed1a00c.jpg" alt="bd2196c37c3f960bfb63b8faed1a00c" style="width:300px " /></div> |
+| 首页                             | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/c87aa3faa79bc4723a615453aa716b8.jpg" alt="c87aa3faa79bc4723a615453aa716b8" style="width:300px; margin: 0 auto;" /></div> |
+| 我的                             | <div style="text-align: center"><img src="https://gitee.com/AlanLee97/assert/raw/master/note_images/205e71fef237d84929e6a701b22603f.jpg" alt="205e71fef237d84929e6a701b22603f" style="width: 300px;" /></div> |
 

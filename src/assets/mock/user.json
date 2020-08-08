@@ -4,6 +4,7 @@
   "data": {
     "id": 1,
     "username": "AlanLee",
+    "nickname": "AlanLee",
     "age": 23,
     "gender": "male",
     "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",

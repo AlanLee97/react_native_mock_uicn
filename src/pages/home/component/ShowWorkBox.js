@@ -18,14 +18,14 @@ class ShowWorkBox extends React.Component{
   // 渲染函数
   render() {
     const props = this.props;
-    return <View key={props.data.title} style={[styles.alMarginLR20, styles.alMarginBottom30]}>
+    return <View key={this.props.data.title} style={[styles.alMarginLR20, styles.alMarginBottom30]}>
       <AvatarAndNickname
-        avatar={props.data.user.avatar}
-        text1={props.data.user.nickname}
-        text2={props.data.user.identity} />
+        avatar={this.props.data.user.avatar}
+        text1={this.props.data.user.nickname}
+        text2={this.props.data.user.identity} />
       <View style={{height: 10}}></View>
-      <ALImage url={props.data.poster} width={React.getScreenWidth() - 40} height={React.getScreenWidth() - 40} radius={20} />
-      <Text numberOfLines={1} style={[styles.alTextH4, styles.alMarginTB10]}>{props.data.title}</Text>
+      <ALImage url={this.props.data.poster} width={React.getScreenWidth() - 40} height={React.getScreenWidth() - 40} radius={20} />
+      <Text numberOfLines={1} style={[styles.alTextH4, styles.alMarginTB10]}>{this.props.data.title}</Text>
       <View style={[styles.alFlexRow, styles.alFlexSpaceBetween]}>
         {/*显示标签*/}
         <View>

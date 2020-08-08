@@ -22,8 +22,8 @@ class AvatarAndNickname extends React.Component{
         }}>
           <ALImage url={this.props.avatar} round={true} width={50} height={50} />
           <View style={{width: 10}}></View>
-          <View>
-            <Text style={styles.alTextH2}>{this.props.text1}</Text>
+          <View style={[localStyle.flexCenterVertical]}>
+            <Text style={styles.alTextH3}>{this.props.text1}</Text>
             <Text style={styles.alTextDesc}>{this.props.text2}</Text>
           </View>
         </View>
@@ -45,3 +45,9 @@ class AvatarAndNickname extends React.Component{
 }
 
 export default AvatarAndNickname;
+
+const localStyle = {
+  flexCenterVertical: {
+    justifyContent: "center"
+  }
+}

@@ -39,6 +39,7 @@ class HomePage extends React.Component{
           {/*作品列表*/}
           <ScrollView>
             {
+
               state.workList.map((item, index) => {
                 return <ShowWorkBox key={item.title} data={item} />
               })
@@ -71,10 +72,11 @@ class HomePage extends React.Component{
       method: 'GET',
       data: {},
     }).then(res => {
-      console.log(res.data);
+      console.log(res.data.data);
       this.setState({
         workList: res.data.data
-      })
+      });
+      // console.log(this.state.workList);
     }).catch(err => {
       console.log(err);
     });

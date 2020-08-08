@@ -8,7 +8,9 @@
       "look": 5422,
       "like": 543,
       "comment": 123,
-      "tag": ["原创"],
+      "tag": [
+        "原创"
+      ],
       "user": {
         "id": 1,
         "username": "AlanLee",
@@ -28,7 +30,9 @@
       "look": 2234,
       "like": 231,
       "comment": 643,
-      "tag": ["原创"],
+      "tag": [
+        "原创"
+      ],
       "user": {
         "id": 2,
         "username": "eqwrerw",
@@ -48,7 +52,9 @@
       "look": 653,
       "like": 532,
       "comment": 133,
-      "tag": ["原创"],
+      "tag": [
+        "原创"
+      ],
       "user": {
         "id": 3,
         "username": "rwer4ewr32",
@@ -63,16 +69,26 @@
       }
     },
     {
-      "id": 4,
-      "username": "ertew32331",
-      "nickname": "莫莫n_n",
-      "age": 23,
-      "gender": "male",
-      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar4.jpg",
-      "sign": "彪悍的人生不需要解释",
-      "identity": "UI设计师",
-      "phone": "15622282904",
-      "email": "1445654576@qq.com"
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster4.png",
+      "title": "拼多多APP REDESIGN",
+      "look": 3421,
+      "like": 41,
+      "comment": 32,
+      "tag": [
+        "原创"
+      ],
+      "user": {
+        "id": 4,
+        "username": "ertew32331",
+        "nickname": "莫莫n_n",
+        "age": 23,
+        "gender": "male",
+        "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar4.jpg",
+        "sign": "彪悍的人生不需要解释",
+        "identity": "UI设计师",
+        "phone": "15622282904",
+        "email": "1445654576@qq.com"
+      }
     },
     {
       "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster5.png",
@@ -80,7 +96,9 @@
       "look": 3421,
       "like": 41,
       "comment": 32,
-      "tag": ["原创"],
+      "tag": [
+        "原创"
+      ],
       "user": {
         "id": 5,
         "username": "564324eww",

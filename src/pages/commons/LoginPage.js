@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, TextInput, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView} from 'react-native';
+import {View, Text, Image, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView, findNodeHandle, UIManagerStatic} from 'react-native';
 import styles from '../../assets/style/Styles';
 import ALDivider from '../../components/al-divider/ALDivider';
 import ALInput from '../../components/al-input/ALInput';
@@ -75,17 +75,14 @@ class LoginPage extends React.Component {
               {/*帐号输入框*/}
               <View style={styles.alMarginLR30}>
                 <Text style={[localStyle.colorGray]}>手机号/用户名/邮箱</Text>
-                <ALInput selectionColor={'#3e9bf7'}/>
-                <ALDivider width={screenWidth - 60}
-                           weight={state.focusUsernameInput ? 2 : 0.5}
-                           color={state.focusUsernameInput ? '#3e9bf7' : '#eee'}/>
+                <ALInput />
+
               </View>
 
               {/*密码输入框*/}
               <View style={[styles.alMarginLR30, styles.alMarginTop30]}>
                 <Text style={[localStyle.colorGray]}>用户密码</Text>
-                <ALInput selectionColor={'#3e9bf7'} type={'password'}/>
-                <ALDivider width={screenWidth - 60}/>
+                <ALInput selectionColor={styles.alColorBlue.color} type={'password'}/>
               </View>
 
               <View style={[
@@ -94,7 +91,7 @@ class LoginPage extends React.Component {
                 styles.alMarginTop20,
                 styles.alMarginLR30]}>
                 <Text>忘记密码？</Text>
-                <Text style={{color: '#62acf8'}}>免密码登录</Text>
+                <Text style={styles.alColorBlue}>免密码登录</Text>
               </View>
 
               {/*登录按钮*/}
@@ -102,7 +99,7 @@ class LoginPage extends React.Component {
                 <Text style={{
                   padding: 14,
                   textAlign: 'center',
-                  backgroundColor: '#62acf8',
+                  backgroundColor: styles.alColorBlue.color,
                   color: '#fff',
                   borderRadius: 10,
                 }}>登录</Text>
@@ -146,6 +143,8 @@ class LoginPage extends React.Component {
   componentWillUnmount() {
     this.keyboardDidShowListener.remove();
     this.keyboardDidHideListener.remove();
+
+    // this.layout(this.alInput);
   }
 
 
@@ -165,6 +164,8 @@ class LoginPage extends React.Component {
     const state = this.state;
     state.navigation.navigate(path);
   }
+
+
 }
 
 const localStyle = StyleSheet.create({

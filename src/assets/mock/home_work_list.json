@@ -5,71 +5,93 @@
     {
       "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster1.png",
       "title": "UI中国手机客户端原创设计",
-      "look": 23421,
-      "like": 420,
-      "comment": 4232,
+      "look": 5422,
+      "like": 543,
+      "comment": 123,
       "tag": ["原创"],
       "user": {
+        "id": 1,
         "username": "AlanLee",
         "nickname": "AlanLee",
+        "age": 23,
+        "gender": "male",
         "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
-        "identity": "UI设计师"
+        "sign": "彪悍的人生不需要解释",
+        "identity": "UI设计师",
+        "phone": "15622282904",
+        "email": "1445654576@qq.com"
       }
     },
     {
       "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster2.png)",
       "title": "「汉学」文学工具产品的视觉与体验碰撞",
-      "look": 23421,
-      "like": 420,
-      "comment": 4232,
+      "look": 2234,
+      "like": 231,
+      "comment": 643,
       "tag": ["原创"],
       "user": {
-        "username": "AlanLee",
-        "nickname": "AlanLee",
-        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
-        "identity": "UI设计师"
+        "id": 2,
+        "username": "eqwrerw",
+        "nickname": "超威蓝猫发飙",
+        "age": 23,
+        "gender": "male",
+        "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar2.jpg",
+        "sign": "彪悍的人生不需要解释",
+        "identity": "UI设计师",
+        "phone": "15622282904",
+        "email": "1445654576@qq.com"
       }
     },
     {
       "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster3.png",
-      "title": "「汉学」文学工具产品的视觉与体验碰撞",
-      "look": 23421,
-      "like": 420,
-      "comment": 4232,
+      "title": "【顷刻】_视听解说APP",
+      "look": 653,
+      "like": 532,
+      "comment": 133,
       "tag": ["原创"],
       "user": {
-        "username": "AlanLee",
-        "nickname": "AlanLee",
-        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
-        "identity": "UI设计师"
+        "id": 3,
+        "username": "rwer4ewr32",
+        "nickname": "光光GXG",
+        "age": 23,
+        "gender": "male",
+        "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar3.jpg",
+        "sign": "彪悍的人生不需要解释",
+        "identity": "开发者",
+        "phone": "15622282904",
+        "email": "1445654576@qq.com"
       }
     },
     {
-      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster4.png",
-      "title": "「汉学」文学工具产品的视觉与体验碰撞",
-      "look": 23421,
-      "like": 420,
-      "comment": 4232,
-      "tag": ["原创"],
-      "user": {
-        "username": "AlanLee",
-        "nickname": "AlanLee",
-        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
-        "identity": "UI设计师"
-      }
+      "id": 4,
+      "username": "ertew32331",
+      "nickname": "莫莫n_n",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar4.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
     },
     {
       "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster5.png",
-      "title": "「汉学」文学工具产品的视觉与体验碰撞",
-      "look": 23421,
-      "like": 420,
-      "comment": 4232,
+      "title": "Redesign《在外》APP",
+      "look": 3421,
+      "like": 41,
+      "comment": 32,
       "tag": ["原创"],
       "user": {
-        "username": "AlanLee",
-        "nickname": "AlanLee",
-        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
-        "identity": "UI设计师"
+        "id": 5,
+        "username": "564324eww",
+        "nickname": "美少女月半",
+        "age": 23,
+        "gender": "male",
+        "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar5.jpg",
+        "sign": "彪悍的人生不需要解释",
+        "identity": "UI设计师",
+        "phone": "15622282904",
+        "email": "1445654576@qq.com"
       }
     }
   ]

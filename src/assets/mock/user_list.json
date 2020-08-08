@@ -1,0 +1,150 @@
+{
+  "code": 1,
+  "msg": "ok",
+  "data": [
+    {
+      "id": 1,
+      "username": "AlanLee",
+      "nickname": "AlanLee",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 2,
+      "username": "eqwrerw",
+      "nickname": "超威蓝猫发飙",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar2.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 3,
+      "username": "rwer4ewr32",
+      "nickname": "光光GXG",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar3.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "开发者",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 4,
+      "username": "ertew32331",
+      "nickname": "莫莫n_n",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar4.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 5,
+      "username": "564324eww",
+      "nickname": "美少女月半",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar5.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 6,
+      "username": "43drgthd",
+      "nickname": "24K青柠",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar6.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "插画师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 7,
+      "username": "455refrtgfx",
+      "nickname": "y园糖 ",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar7.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "开发者",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 8,
+      "username": "75trgd",
+      "nickname": "插画师卷耳",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar8.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "插画师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 9,
+      "username": "ugjftg",
+      "nickname": "这里倔匠",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar9.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 10,
+      "username": "NUMBER22_X",
+      "nickname": "NUMBER22_X",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar10.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "UI设计师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 11,
+      "username": "ytrgdffw",
+      "nickname": "半夏微甜",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar11.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "开发者",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    },
+    {
+      "id": 12,
+      "username": "rt4sfewe",
+      "nickname": "喜瓜瓜丶",
+      "age": 23,
+      "gender": "male",
+      "avatar": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/other/avatar/avatar12.jpg",
+      "sign": "彪悍的人生不需要解释",
+      "identity": "插画师",
+      "phone": "15622282904",
+      "email": "1445654576@qq.com"
+    }
+  ]
+}

@@ -1,6 +1,23 @@
 import React from "react";
 import {StyleSheet} from 'react-native';
 
+const color = {
+  primary: "#409EFF",
+  success: "#67C23A",
+  error: "#FF2A35",
+  danger: "#F56C6C",
+  warning: "#E6A23C",
+  info: "#909399",
+  text1: "#303133",
+  text2: "#606266",
+  text3: "#909399",
+  text4: "#C0C4CC",
+  border1: "#DCDFE6",
+  border2: "#E4E7ED",
+  border3: "#EBEEF5",
+  border4: "#F2F6FC",
+}
+
 const styles = StyleSheet.create({
   alFlexCenter:{
     flex: 1,
@@ -54,7 +71,7 @@ const styles = StyleSheet.create({
 
   alTextDesc: {
     fontSize: 14,
-    color: '#999'
+    color: color.text3
   },
 
   alMargin10: {
@@ -244,12 +261,12 @@ const styles = StyleSheet.create({
 
   alShowBorderRed:{
     borderWidth: 1,
-    borderColor: 'red',
+    borderColor: color.error,
     borderStyle: 'solid'
   },
   alShowBorderBlue:{
     borderWidth: 1,
-    borderColor: 'blue',
+    borderColor: color.primary,
     borderStyle: 'solid'
   },
   alShowBorderBlack:{
@@ -259,7 +276,7 @@ const styles = StyleSheet.create({
   },
   alShowBorderGreen:{
     borderWidth: 1,
-    borderColor: 'green',
+    borderColor: color.success,
     borderStyle: 'solid'
   },
 
@@ -308,7 +325,19 @@ const styles = StyleSheet.create({
   },
 
   alColorBlue: {
-    color: "#68d4fb"
+    color: color.primary
+  },
+  alColorGreen: {
+    color: color.success
+  },
+  alColorRed: {
+    color: color.error
+  },
+  alColorRedLight: {
+    color: color.danger
+  },
+  alColorYellow: {
+    color: color.warning
   },
 
   alWrapWidth: {

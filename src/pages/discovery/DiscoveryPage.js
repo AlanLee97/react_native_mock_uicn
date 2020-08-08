@@ -1,15 +1,7 @@
 import React from "react";
 import {View, Text} from 'react-native';
 import {Button, Badge} from 'react-native-elements';
-import {SegmentedView, Label} from 'teaset'
-import styles from '../../assets/style/Styles';
-import HomePage from '../home/HomePage';
-import MyPage from '../my/MyPage';
 import LoginPage from '../commons/LoginPage';
-import RegisterPage from '../commons/RegisterPage';
-import ALTitleTab from '../../components/al-title-tab/ALTitleTab';
-
-
 
 class DiscoveryPage extends React.Component{
 
@@ -28,7 +20,8 @@ class DiscoveryPage extends React.Component{
         <View>
           <View style={{height: 400}}></View>
           <Button title={"登录"} onPress={() => nav.push('LoginPage')} />
-
+          <Text></Text>
+          <Button title={"测试"} onPress={() => nav.push('TestPage')} />
 
         </View>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView} from 'react-native';
+import {View, Text, Image, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView, ToastAndroid} from 'react-native';
 import styles from '../../assets/style/Styles';
 import ALDivider from '../../components/al-divider/ALDivider';
 import ALInput from '../../components/al-input/ALInput';
@@ -120,6 +120,7 @@ class LoginPage extends React.Component {
                       nav.goBack();
                     }else {
                       console.log("帐号密码错误");
+                      React.showPositionToast("帐号密码错误");
                     }
                   }}>登录</Text>
                 </LinearGradient>
@@ -128,6 +129,7 @@ class LoginPage extends React.Component {
           </KeyboardAvoidingView>
 
 
+          {/*提示文字*/}
           <View style={{marginLeft: 30,
           marginRight: 30, marginBottom: 80}}>
             <View style={styles.alMarginBottom30}>

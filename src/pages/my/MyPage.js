@@ -127,7 +127,11 @@ class MyPage extends React.Component {
           paddingTop: 30,
         }}>
           {/*用户名和昵称*/}
-          <AvatarAndNickname userInfo={userInfo} padding={20}/>
+          <AvatarAndNickname
+            avatar={userInfo.avatar}
+            text1={userInfo.nickname}
+            text2={userInfo.sign}
+            padding={20} />
 
           {/*统计数据*/}
           <View style={[localStyle.countBoxStyle]}>

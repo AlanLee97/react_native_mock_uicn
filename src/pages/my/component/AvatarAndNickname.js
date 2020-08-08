@@ -15,18 +15,16 @@ class AvatarAndNickname extends React.Component{
 
   // 渲染函数
   render() {
-    const userInfo = this.props.userInfo;
-    const props = this.props;
     return (
         <View style={{flexDirection: 'row',
-          padding: React.createDefaultValue(props.padding, 0),
-          margin: React.createDefaultValue(props.margin, 0),
+          padding: React.createDefaultValue(this.props.padding, 0),
+          margin: React.createDefaultValue(this.props.margin, 0),
         }}>
-          <ALImage url={userInfo.avatar} round={true} width={50} height={50} />
+          <ALImage url={this.props.avatar} round={true} width={50} height={50} />
           <View style={{width: 10}}></View>
           <View>
-            <Text style={styles.alTextH2}>{userInfo.username}</Text>
-            <Text style={styles.alTextDesc}>{userInfo.sign}</Text>
+            <Text style={styles.alTextH2}>{this.props.text1}</Text>
+            <Text style={styles.alTextDesc}>{this.props.text2}</Text>
           </View>
         </View>
     );

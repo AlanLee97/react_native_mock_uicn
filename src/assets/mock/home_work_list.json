@@ -1,0 +1,76 @@
+{
+  "code": 1,
+  "msg": "ok",
+  "data": [
+    {
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster1.png",
+      "title": "UI中国手机客户端原创设计",
+      "look": 23421,
+      "like": 420,
+      "comment": 4232,
+      "tag": ["原创"],
+      "user": {
+        "username": "AlanLee",
+        "nickname": "AlanLee",
+        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+        "identity": "UI设计师"
+      }
+    },
+    {
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster2.png)",
+      "title": "「汉学」文学工具产品的视觉与体验碰撞",
+      "look": 23421,
+      "like": 420,
+      "comment": 4232,
+      "tag": ["原创"],
+      "user": {
+        "username": "AlanLee",
+        "nickname": "AlanLee",
+        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+        "identity": "UI设计师"
+      }
+    },
+    {
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster3.png",
+      "title": "「汉学」文学工具产品的视觉与体验碰撞",
+      "look": 23421,
+      "like": 420,
+      "comment": 4232,
+      "tag": ["原创"],
+      "user": {
+        "username": "AlanLee",
+        "nickname": "AlanLee",
+        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+        "identity": "UI设计师"
+      }
+    },
+    {
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster4.png",
+      "title": "「汉学」文学工具产品的视觉与体验碰撞",
+      "look": 23421,
+      "like": 420,
+      "comment": 4232,
+      "tag": ["原创"],
+      "user": {
+        "username": "AlanLee",
+        "nickname": "AlanLee",
+        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+        "identity": "UI设计师"
+      }
+    },
+    {
+      "poster": "https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/image/my/poster5.png",
+      "title": "「汉学」文学工具产品的视觉与体验碰撞",
+      "look": 23421,
+      "like": 420,
+      "comment": 4232,
+      "tag": ["原创"],
+      "user": {
+        "username": "AlanLee",
+        "nickname": "AlanLee",
+        "avatar": "https://gitee.com/AlanLee97/assert/raw/master/note_images/naruto.jpg",
+        "identity": "UI设计师"
+      }
+    }
+  ]
+}

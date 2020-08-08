@@ -2,7 +2,7 @@
  * @format
  */
 
-import {AppRegistry, Dimensions} from 'react-native';
+import {AppRegistry, Dimensions, ToastAndroid} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
 import React from 'react';
@@ -24,6 +24,14 @@ React.getScreenWidth = () => {
 
 React.getScreenHeight = () => {
   return Dimensions.get('window').height;
+}
+
+React.showToast = (message) => {
+  ToastAndroid.show(message, ToastAndroid.SHORT);
+}
+
+React.showPositionToast = (message) => {
+  ToastAndroid.showWithGravity(message, ToastAndroid.SHORT, ToastAndroid.TOP);
 }
 
 AppRegistry.registerComponent(appName, () => App);

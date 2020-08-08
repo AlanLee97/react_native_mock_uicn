@@ -7,7 +7,7 @@ import App from './App';
 import {name as appName} from './app.json';
 import React from 'react';
 
-React.mockPath = 'http://localhost:8081/src/assets/mock/';
+React.mockPath = 'https://gitee.com/AlanLee97/react_native_mock_uicn/raw/master/src/assets/mock';
 React.createDefaultValue = (value, defaultValue) => {
   return value === undefined ? defaultValue : value;
 }

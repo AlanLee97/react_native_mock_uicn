@@ -16,7 +16,7 @@ class MessagePage extends React.Component{
   render() {
     return (
         <View style={styles.alFlexCenter}>
-          <Text>MessagePage</Text>
+          <Text style={localStyle.textColorBlue}>Hello React Native</Text>
         </View>
     );
   }
@@ -32,7 +32,19 @@ class MessagePage extends React.Component{
 
   }
 
-
 }
 
+
 export default MessagePage;
+
+// 样式
+const localStyle = {
+  textColorBlue: {
+    color: "blue"
+  },
+  flexCenter: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+}

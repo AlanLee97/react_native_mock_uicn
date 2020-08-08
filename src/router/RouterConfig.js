@@ -1,8 +1,8 @@
 import HomePage from "../pages/home/HomePage";
 import LoginPage from "../pages/commons/LoginPage";
 import AppContainer from "../pages/commons/AppContainer";
-import TestNetwork from "../pages/test/TestNetwork";
 import RegisterPage from '../pages/commons/RegisterPage';
+import TestPage from '../pages/test/TestPage';
 
 const routes = [
   {
@@ -38,8 +38,8 @@ const routes = [
     }
   },
   {
-    name: "TestNetwork",
-    component: TestNetwork,
+    name: "TestPage",
+    component: TestPage,
     options: {
       header: () => null,
     }

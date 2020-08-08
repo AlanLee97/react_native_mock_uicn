@@ -1,8 +1,9 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView, findNodeHandle, UIManagerStatic} from 'react-native';
+import {View, Text, Image, StyleSheet, Keyboard, ScrollView, KeyboardAvoidingView} from 'react-native';
 import styles from '../../assets/style/Styles';
 import ALDivider from '../../components/al-divider/ALDivider';
 import ALInput from '../../components/al-input/ALInput';
+import LinearGradient from "react-native-linear-gradient";
 
 
 class LoginPage extends React.Component {
@@ -11,9 +12,7 @@ class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      navigation: props.navigation,
-      focusUsernameInput: false,
-      hideLogo: false,
+      username: "",
       keyboardHeight: '',
       thirdLoginIcon: [
         {
@@ -75,14 +74,22 @@ class LoginPage extends React.Component {
               {/*帐号输入框*/}
               <View style={styles.alMarginLR30}>
                 <Text style={[localStyle.colorGray]}>手机号/用户名/邮箱</Text>
-                <ALInput />
+                <ALInput onChangeText={(value) => {
+                  this.setState({
+                    username: value
+                  })
+                }} />
 
               </View>
 
               {/*密码输入框*/}
               <View style={[styles.alMarginLR30, styles.alMarginTop30]}>
                 <Text style={[localStyle.colorGray]}>用户密码</Text>
-                <ALInput selectionColor={styles.alColorBlue.color} type={'password'}/>
+                <ALInput type={'password'} onChangeText={(value) => {
+                  this.setState({
+                    password: value
+                  })
+                }}/>
               </View>
 
               <View style={[
@@ -96,13 +103,26 @@ class LoginPage extends React.Component {
 
               {/*登录按钮*/}
               <View style={[styles.alMarginLR30, styles.alMarginTop30]}>
-                <Text style={{
-                  padding: 14,
-                  textAlign: 'center',
-                  backgroundColor: styles.alColorBlue.color,
-                  color: '#fff',
-                  borderRadius: 10,
-                }}>登录</Text>
+                <LinearGradient
+                  style={{borderRadius: 10,}}
+                  start={{x: 0.3, y: 0.1}}
+                  end={{x: 0.9, y: 0.1}}
+                  colors={["#2f7bff", "#60b6fd"]}>
+                  <Text style={{
+                    padding: 14,
+                    textAlign: 'center',
+                    color: '#fff',
+                    borderRadius: 10,
+                  }} onPress={() => {
+                    console.log(this.state.username);
+                    console.log(this.state.password);
+                    if (this.state.username === 'alanlee' && this.state.password === '123456'){
+                      nav.goBack();
+                    }else {
+                      console.log("帐号密码错误");
+                    }
+                  }}>登录</Text>
+                </LinearGradient>
               </View>
             </ScrollView>
           </KeyboardAvoidingView>
@@ -117,6 +137,7 @@ class LoginPage extends React.Component {
             </View>
 
 
+            {/*第三方登录icon*/}
             <View style={[styles.alFlexRow, styles.alFlexSpaceBetween]}>
               {this.state.thirdLoginIcon.map((item) => {
                 return <Image key={item.icon} style={{

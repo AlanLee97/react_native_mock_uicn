@@ -40,7 +40,7 @@ class ALDivider extends React.Component {
                         </View> :
                         <View style={{
                           margin: React.createDefaultValue(this.props.margin, 0),
-                          width: React.createDefaultValue(this.props.width, screenWidth),
+                          width: React.createDefaultValue(this.props.width, undefined),
                           height: React.createDefaultValue(this.props.weight, 0.5),
                           backgroundColor: React.createDefaultValue(this.props.color, '#eeeeee'),
                         }}/>

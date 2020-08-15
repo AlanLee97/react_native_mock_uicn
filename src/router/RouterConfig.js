@@ -3,6 +3,8 @@ import LoginPage from "../pages/commons/LoginPage";
 import AppContainer from "../pages/commons/AppContainer";
 import RegisterPage from '../pages/commons/RegisterPage';
 import TestPage from '../pages/test/TestPage';
+import TestTabs from '../pages/test/TestTabs';
+
 
 const routes = [
   {
@@ -40,6 +42,13 @@ const routes = [
   {
     name: "TestPage",
     component: TestPage,
+    options: {
+      header: () => null,
+    }
+  },
+  {
+    name: "TestTabs",
+    component: TestTabs,
     options: {
       header: () => null,
     }

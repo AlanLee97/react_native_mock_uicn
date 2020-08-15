@@ -32,6 +32,8 @@
 		8505A73228C94E42B387142C /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 688F57D51C284CC280FF7098 /* Octicons.ttf */; };
 		B527B7A0BFB842818C49DA61 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C82CCFD7FF2847A5B55B5242 /* SimpleLineIcons.ttf */; };
 		32FC0942645B42A9B84E481E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA6600F21FF4D36B3F1F6CD /* Zocial.ttf */; };
+		5D89041F8D4740FE868A8D9B /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 818902C4DE5241F3879990C6 /* antfill.ttf */; };
+		AC01DCF7212C4048ACB5E309 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD40F35B4B7F4B0384424FAE /* antoutline.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		688F57D51C284CC280FF7098 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C82CCFD7FF2847A5B55B5242 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		ABA6600F21FF4D36B3F1F6CD /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		818902C4DE5241F3879990C6 /* antfill.ttf */ = {isa = PBXFileReference; name = "antfill.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CD40F35B4B7F4B0384424FAE /* antoutline.ttf */ = {isa = PBXFileReference; name = "antoutline.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,8 @@
 				688F57D51C284CC280FF7098 /* Octicons.ttf */,
 				C82CCFD7FF2847A5B55B5242 /* SimpleLineIcons.ttf */,
 				ABA6600F21FF4D36B3F1F6CD /* Zocial.ttf */,
+				818902C4DE5241F3879990C6 /* antfill.ttf */,
+				CD40F35B4B7F4B0384424FAE /* antoutline.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -368,6 +374,8 @@
 				8505A73228C94E42B387142C /* Octicons.ttf in Resources */,
 				B527B7A0BFB842818C49DA61 /* SimpleLineIcons.ttf in Resources */,
 				32FC0942645B42A9B84E481E /* Zocial.ttf in Resources */,
+				5D89041F8D4740FE868A8D9B /* antfill.ttf in Resources */,
+				AC01DCF7212C4048ACB5E309 /* antoutline.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

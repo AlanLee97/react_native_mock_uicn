@@ -1,9 +1,12 @@
 import React from "react";
-import {View, Text, } from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import LinearGradient from "react-native-linear-gradient";
+import { Tabs, Button } from '@ant-design/react-native';
+import styles from '../../assets/style/Styles';
+import ALTabs from '../../components/al-tabs/ALTabs';
+import TestTabs from './TestTabs';
 
-
-class TestPage extends React.Component{
+export default class TestPage extends React.Component{
 
   //构造器
   constructor(props) {
@@ -15,14 +18,19 @@ class TestPage extends React.Component{
 
   // 渲染函数
   render() {
+    const nav = this.props.navigation;
+
     return (
-        <View style={{marginTop: 400}}>
-          <LinearGradient
-            start={{x: 0.1, y: 0.1}}
-            end={{x: 0.8, y: 0.8}}
-            colors={['#5fdea7', '#1C86EE']}>
-            <Text style={localStyle.textColorBlue}>Hello React Native</Text>
-          </LinearGradient>
+        <View style={{paddingTop: 40}}>
+
+          <Button onPress={() => {
+            nav.push("TestTabs")
+          }}>测试Tabs</Button>
+
+          <View style={{width: 400, height: 600}}>
+            <TestTabs />
+          </View>
+
         </View>
     );
   }
@@ -40,9 +48,6 @@ class TestPage extends React.Component{
 
 }
 
-
-export default TestPage;
-
 // 样式
 const localStyle = {
   textColorBlue: {
@@ -52,5 +57,13 @@ const localStyle = {
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
+  },
+  height60: {
+    height: 60+'px'
+  },
+  bgColor: {
+    backgroundColor: "#5de7ae"
   }
 }
+
+

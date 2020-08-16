@@ -2,6 +2,7 @@ import React from "react";
 import {View, Text} from 'react-native'
 import ALImage from "../../../components/al-image/ALImage";
 import styles from "../../../assets/style/Styles";
+import ALWrapView from '../../../components/al-wrap-view/ALWrapView';
 
 class AvatarAndNickname extends React.Component{
 
@@ -16,17 +17,20 @@ class AvatarAndNickname extends React.Component{
   // 渲染函数
   render() {
     return (
-        <View style={{flexDirection: 'row',
-          padding: React.createDefaultValue(this.props.padding, 0),
-          margin: React.createDefaultValue(this.props.margin, 0),
-        }}>
-          <ALImage url={this.props.avatar} round={true} width={50} height={50} />
-          <View style={{width: 10}}></View>
-          <View style={[localStyle.flexCenterVertical]}>
-            <Text style={styles.alTextH3}>{this.props.text1}</Text>
-            <Text style={styles.alTextDesc}>{this.props.text2}</Text>
+        <ALWrapView>
+          <View style={{
+            flexDirection: 'row',
+            padding: this.props.padding ?? 0,
+            margin: this.props.margin ?? 0,
+          }}>
+            <ALImage url={this.props.avatar} round={true} width={50} height={50} />
+            <View style={{width: 10}}></View>
+            <View style={[localStyle.flexCenterVertical]}>
+              <Text style={styles.alTextH3}>{this.props.text1}</Text>
+              <Text style={styles.alTextDesc}>{this.props.text2}</Text>
+            </View>
           </View>
-        </View>
+        </ALWrapView>
     );
   }
 

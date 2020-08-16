@@ -24,6 +24,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  alFlexCenterV:{
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  alFlexCenterH:{
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
   alTextCenter: {
     textAlign: 'center'
   },

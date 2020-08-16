@@ -23,10 +23,15 @@ class HomePage extends React.Component {
   render() {
     const state = this.state;
     const tabs = [
-      {key: 'index', title: '首页推荐', component: IndexPage},
-      {key: 'newest', title: '最新', component: NewestPage},
-      {key: 'follow', title: '关注', component: FollowPage},
+      {key: 'index', title: '首页推荐'},
+      {key: 'newest', title: '最新'},
+      {key: 'follow', title: '关注'},
     ];
+    const sceneMap = {
+      index: () => <IndexPage {...this.props} />,
+      newest: () => <NewestPage {...this.props} />,
+      follow: () => <FollowPage {...this.props} />
+    }
 
 
     return (
@@ -38,7 +43,10 @@ class HomePage extends React.Component {
         <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0)" barStyle={'dark-content'}/>
 
         <View style={{width: screenWidth, height: screenHeight}}>
-          <ALTabs tabs={tabs} tabBarStyle={localStyle.tabBarStyle} />
+          <ALTabs
+            tabs={tabs}
+            sceneMap={sceneMap}
+            tabBarStyle={localStyle.tabBarStyle} />
         </View>
 
       </View>

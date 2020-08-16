@@ -5,8 +5,8 @@ import IndexPage from './page/IndexPage';
 import NewestPage from './page/NewestPage';
 import FollowPage from './page/FollowPage';
 
-const screenWidth = React.getScreenWidth();
-const screenHeight = React.getScreenHeight();
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 
 class HomePage extends React.Component {
 

@@ -1,36 +1,84 @@
-import * as React from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
-import { TabView, SceneMap } from 'react-native-tab-view';
+import React, {PureComponent} from 'react';
+import {
+  SafeAreaView,
+  Dimensions,
+  StyleSheet,
+} from 'react-native';
+import {SceneMap, TabView, TabBar} from 'react-native-tab-view';
+const screenWidth = Dimensions.get('window').width;
 
-const initialLayout = { width: Dimensions.get('window').width };
+export default class ALTabs extends PureComponent {
+  // 默认属性
+  // 构造
+  constructor(props) {
+    super(props);
+    // 初始状态
+    this.state = {
+      index: 0,
+      routes: [],
+    };
+  }
 
-export default function ALTabs(props) {
-  // [
-  //   { key: 'a', title: '1', component: FirstRoute },
-  //   { key: 'b', title: '2', component: SecondRoute },
-  //   { key: 'c', title: '3', component: ThirdRoute },
-  // ]
-  const tabs = props.tabs;
-  let sceneObj = {};
-  tabs.map((item, index) => {
-    sceneObj[item.key] = item.component;
-  });
-  const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState(tabs);
-  const renderScene = SceneMap(sceneObj);
-
-  return (
-    <TabView
-      navigationState={{ index, routes }}
-      renderScene={renderScene}
-      onIndexChange={setIndex}
-      initialLayout={initialLayout}
-    />
-  );
+  // 渲染
+  render() {
+    this.setState({
+      routes: this.props.tabs,
+    });
+    const tabs = this.props.tabs;
+    const sceneMap = {};
+    tabs.map((item, index) => {
+      sceneMap[item.key] = item.component;
+    });
+    return (
+      <SafeAreaView style={{flex: 1}}>
+        <TabView
+          navigationState={this.state}
+          renderScene={SceneMap(sceneMap)}
+          onIndexChange={index => this.setState({index})}
+          initialLayout={{width: screenWidth}}
+          renderTabBar={props =>
+            <TabBar
+              {...props}
+              style={this.props.tabBarStyle ?? localStyle.tabBarStyle}
+              getLabelText={({route}) => route.title}
+              labelStyle={this.props.labelStyle ?? localStyle.labelStyle}
+              tabStyle={{height: 44}}
+              indicatorStyle={this.props.borderStyle ?? localStyle.borderStyle}
+              activeColor={this.props.activeColor ?? localStyle.activeColor.color}
+              inactiveColor={this.props.inactiveColor ?? localStyle.inactiveColor.color}
+            />
+          }
+        />
+      </SafeAreaView>
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  scene: {
-    flex: 1,
+const localStyle = StyleSheet.create({
+  tabBarStyle: {
+    backgroundColor: '#f5f5f5',
+    shadowColor: '#d4d4d4',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowRadius: 0,
+    shadowOpacity: 1,
   },
+  labelStyle: {
+    fontFamily: 'PingFangSC-Regular',
+    fontSize: 15,
+  },
+  borderStyle: {
+    backgroundColor: '#409EFF',
+    width: 20,
+    marginLeft: (screenWidth / 3) / 2 - 10,
+    borderRadius: 10
+  },
+  activeColor: {
+    color: "#409EFF"
+  },
+  inactiveColor: {
+    color: "#C0C4CC"
+  }
 });

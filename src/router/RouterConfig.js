@@ -4,6 +4,7 @@ import AppContainer from "../pages/commons/AppContainer";
 import RegisterPage from '../pages/commons/RegisterPage';
 import TestPage from '../pages/test/TestPage';
 import TestTabs from '../pages/test/TestTabs';
+import WorkDetailPage from '../pages/work/WorkDetailPage';
 
 
 const routes = [
@@ -52,7 +53,15 @@ const routes = [
     options: {
       header: () => null,
     }
-  }
+  },
+  {
+    name: "WorkDetailPage",
+    component: WorkDetailPage,
+    options: {
+      header: () => null,
+    }
+  },
+
 ];
 
 export default routes;

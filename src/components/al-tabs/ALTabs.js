@@ -73,7 +73,8 @@ const localStyle = StyleSheet.create({
     backgroundColor: '#409EFF',
     width: 20,
     marginLeft: (screenWidth / 3) / 2 - 10,
-    borderRadius: 10
+    borderRadius: 10,
+    marginBottom: 5,
   },
   activeColor: {
     color: "#409EFF"

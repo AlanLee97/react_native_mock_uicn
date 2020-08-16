@@ -1,9 +1,5 @@
 import React, {PureComponent} from 'react';
-import {
-  SafeAreaView,
-  Dimensions,
-  StyleSheet,
-} from 'react-native';
+import {SafeAreaView, Dimensions, StyleSheet,} from 'react-native';
 import {SceneMap, TabView, TabBar} from 'react-native-tab-view';
 const screenWidth = Dimensions.get('window').width;
 
@@ -22,13 +18,11 @@ export default class ALTabs extends PureComponent {
   // 渲染
   render() {
     this.setState({
-      routes: this.props.tabs,
+      routes: this.props.tabs
     });
     const tabs = this.props.tabs;
-    const sceneMap = {};
-    tabs.map((item, index) => {
-      sceneMap[item.key] = item.component;
-    });
+    const sceneMap = this.props.sceneMap;
+
     return (
       <SafeAreaView style={{flex: 1}}>
         <TabView
@@ -51,6 +45,10 @@ export default class ALTabs extends PureComponent {
         />
       </SafeAreaView>
     );
+  }
+
+  componentDidMount() {
+
   }
 }
 

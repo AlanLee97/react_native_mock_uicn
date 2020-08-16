@@ -26,7 +26,7 @@ class IndexPage extends React.Component{
         {
           this.state.workList.map((item, index) => {
             return <TouchableOpacity key={item.title} onPress={() => {
-              this.props.navigation.push("WorkDetailPage", {workId: index+1})
+              this.props.navigation.push("WorkDetailPage", {workData: item})
             }}>
               <ShowWorkBox navigation={nav}  data={item} />
             </TouchableOpacity>
@@ -46,8 +46,6 @@ class IndexPage extends React.Component{
   //组件已挂载
   componentDidMount() {
     this.getMockData();
-    console.log("IndexPage======================");
-    console.log(this.props.navigation);
   }
 
   //组件将要卸载时

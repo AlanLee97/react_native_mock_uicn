@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import ShowWorkBox from '../component/ShowWorkBox';
 import {request} from '../../../util/network/axiosRequest';
 import styles from '../../../assets/style/Styles';
@@ -18,13 +18,18 @@ class IndexPage extends React.Component{
 
   // 渲染函数
   render() {
+    const nav = this.props.navigation;
     return (
       <ScrollView>
         <ALPlaceView height={20} />
 
         {
           this.state.workList.map((item, index) => {
-            return <ShowWorkBox key={item.title} data={item} />
+            return <TouchableOpacity key={item.title} onPress={() => {
+              this.props.navigation.push("WorkDetailPage", {workId: index+1})
+            }}>
+              <ShowWorkBox navigation={nav}  data={item} />
+            </TouchableOpacity>
           })
         }
 
@@ -41,6 +46,8 @@ class IndexPage extends React.Component{
   //组件已挂载
   componentDidMount() {
     this.getMockData();
+    console.log("IndexPage======================");
+    console.log(this.props.navigation);
   }
 
   //组件将要卸载时
@@ -57,7 +64,7 @@ class IndexPage extends React.Component{
       method: 'GET',
       data: {},
     }).then(res => {
-      console.log(res.data.data);
+      // console.log(res.data.data);
       this.setState({
         workList: res.data.data
       });
